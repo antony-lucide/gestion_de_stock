@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `categorie`
+-- Table structure for table `catégorie`
 --
 
-DROP TABLE IF EXISTS `categorie`;
+DROP TABLE IF EXISTS `catégorie`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `categorie` (
+CREATE TABLE `catégorie` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `categorie`
+-- Dumping data for table `catégorie`
 --
 
-LOCK TABLES `categorie` WRITE;
-/*!40000 ALTER TABLE `categorie` DISABLE KEYS */;
-INSERT INTO `categorie` VALUES (1,'Meuble'),(2,'Sport'),(3,'Outils');
-/*!40000 ALTER TABLE `categorie` ENABLE KEYS */;
+LOCK TABLES `catégorie` WRITE;
+/*!40000 ALTER TABLE `catégorie` DISABLE KEYS */;
+INSERT INTO `catégorie` VALUES (1,'meuble'),(2,'objets'),(3,'jouets'),(4,'utilitaires');
+/*!40000 ALTER TABLE `catégorie` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -54,7 +54,7 @@ CREATE TABLE `produit` (
   `quantité` int DEFAULT NULL,
   `id_catégorie` int DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +63,7 @@ CREATE TABLE `produit` (
 
 LOCK TABLES `produit` WRITE;
 /*!40000 ALTER TABLE `produit` DISABLE KEYS */;
-INSERT INTO `produit` VALUES (1,'Chaise','Une Chaise IKEA',40,NULL,130),(2,'Table','Une Table IKEA',50,NULL,145),(3,'Escabeau','Pour grimpez au arbres',60,NULL,160),(4,'Vélo','Pour Pedalez',80,NULL,200);
+INSERT INTO `produit` VALUES (1,'rose','une rose des lys',40,60,14506),(2,'chaise','des chaises ikea',60,100,15405),(19,'chocolat','Du chocolat au lait',50,30,14232);
 /*!40000 ALTER TABLE `produit` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -76,4 +76,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-15 18:09:24
+-- Dump completed on 2023-04-03  1:37:19
