@@ -93,7 +93,7 @@ def db_remove():
     update()
     
 
-#Boutton pour modifier les stocks de la boutique
+#Bouton pour modifier les stocks de la boutique
 interface_boutton = Button(root,text='produits').place(x=500,y=20)
 interface_boutton2 = Button(root,text='ajouter',command=ajouter).place(x=700,y=20)
 interface_boutton3 = Button(root,text='supprimer',command=db_remove).place(x=390,y=20)
